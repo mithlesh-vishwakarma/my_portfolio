@@ -141,7 +141,7 @@ function initMap() {
 
 function printPDF() {
   const iframe = document.getElementById('pdf-frame');
-  iframe.src = 'assets/imgs/sample_resume.pdf';
+  iframe.src = 'assets/imgs/vishwakarma mithlesh (resume).pdf';
   iframe.onload = function () {
     iframe.contentWindow.focus();
     iframe.contentWindow.print();
