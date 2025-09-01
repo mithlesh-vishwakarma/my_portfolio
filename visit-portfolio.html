@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Devcrud" />
+    <title>Please Visit My Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Merienda:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
+    <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="assets/css/johndoe.css" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      .modern-container {
+        position: relative;
+        min-height: 100vh;
+        background: linear-gradient(
+          135deg,
+          #0a0a0a 0%,
+          #1a1a1a 50%,
+          #2a2a2a 80%,
+          rgba(255, 204, 0, 0.1) 100%
+        );
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      .modern-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+            circle at 30% 40%,
+            rgba(255, 204, 0, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 70% 80%,
+            rgba(0, 31, 63, 0.3) 0%,
+            transparent 50%
+          );
+        pointer-events: none;
+      }
+
+      .content-wrapper {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        text-align: center;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .modern-title {
+        font-family: "Merienda", cursive;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 700;
+        margin-bottom: 2rem;
+        background: linear-gradient(45deg, #ffffff, #ffcc00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .modern-text {
+        font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+      }
+
+      .modern-btn {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        background: linear-gradient(45deg, #ffcc00, #ffb300);
+        color: #001f3f;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 25px rgba(255, 204, 0, 0.3);
+        border: none;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .modern-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .modern-btn:hover::before {
+        left: 100%;
+      }
+
+      .modern-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(255, 204, 0, 0.4);
+      }
+
+      .modern-subtitle {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+        font-weight: 300;
+        margin-top: 2rem;
+        opacity: 0.8;
+      }
+
+      .heart-icon {
+        font-size: 2rem;
+        color: #ffcc00;
+        animation: pulse 2s infinite;
+        margin-top: 2rem;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .modern-container {
+          padding: 1rem;
+        }
+
+        .modern-title {
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="modern-container">
+      <div class="content-wrapper">
+        <h1 class="modern-title">Humble Request</h1>
+        <p class="modern-text">
+          Please visit my portfolio at
+          <a
+            href="http://www.ordinarycoder.com"
+            target="_blank"
+            class="modern-btn"
+          >
+            www.ordinarycoder.com
+          </a>
+        </p>
+        <p class="modern-subtitle">
+          I appreciate your time and hope you enjoy exploring my work!
+        </p>
+        <div class="heart-icon">
+          <i class="ti-heart"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+  </body>
+</html>
